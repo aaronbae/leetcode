@@ -35,7 +35,7 @@ class Solution(object):
           substring_found = False
           break
       if substring_found:
-        
+
         back_c = s[back]
         while True:
           if back_c in count:
@@ -45,13 +45,13 @@ class Solution(object):
           if back + 1 <= front:
             back += 1
             back_c = s[back]
-          else: 
+          else:
             break
-        
+
         if front - back + 1 < min_length:
           min_length = front - back + 1
           if min_length == min_goal:
-            return min_length 
+            return min_length
         back += 1
         count[back_c] += 1
       front += 1
@@ -59,9 +59,9 @@ class Solution(object):
 
 
 a = Solution()
-#print(a.balancedString("WWEQERQWQWWRWWERQWEQ"))
-#print(a.balancedString("WWQQQRQWQWWRWWERQWEQ"))
-#print(a.balancedString("QQWE"))
-#print(a.balancedString("QQQW"))
-#print(a.balancedString("QQQQ"))
+# print(a.balancedString("WWEQERQWQWWRWWERQWEQ"))
+# print(a.balancedString("WWQQQRQWQWWRWWERQWEQ"))
+# print(a.balancedString("QQWE"))
+# print(a.balancedString("QQQW"))
+# print(a.balancedString("QQQQ"))
 print(a.balancedString("WQWRQQQW"))
