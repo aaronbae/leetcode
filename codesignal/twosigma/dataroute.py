@@ -66,10 +66,8 @@ def dataRoute(resource, server, network):
 
   
   i = 0
-  prev_path = None
   found_path, f, direction = get_path(flow, backwards, network, resource, server)
   while len(found_path) > 0:
-    zipped = [(x,y) for x,y in zip(found_path, [0]+direction)]
     print(i, " : ", found_path, direction )
     prev = resource
     for i, p in enumerate(found_path):
@@ -81,7 +79,6 @@ def dataRoute(resource, server, network):
 
 
       prev = p
-    prev_path = zipped
     found_path, f, direction = get_path(flow, backwards, network, resource, server)
   return sum(flow[resource].values()) if resource in flow.keys() else 0
 
