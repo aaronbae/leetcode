@@ -17,7 +17,6 @@ Missing Number - https://leetcode.com/problems/missing-number/
 Reverse Bits - https://leetcode.com/problems/reverse-bits/
 
 Dynamic Programming
-Climbing Stairs - https://leetcode.com/problems/climbing-stairs/
 Longest Increasing Subsequence - https://leetcode.com/problems/longest-increasing-subsequence/
 Word Break Problem - https://leetcode.com/problems/word-break/
 House Robber - https://leetcode.com/problems/house-robber/
